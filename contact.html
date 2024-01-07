@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+            <link rel="stylesheet" href="css/style.css">
+            <title>Welcome to Yumplings</title>
+        </head>
+    <body>
+        <header>
+            <img src="images/logo.png" alt="Your Food Logo">
+            <h1>Welcome to Yumplings</h1>
+            <nav2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html" >About Us</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav2>
+        </header>
+        <main>
+            <!-- Contact Page Content -->
+            <section id="contact">
+                <h1>Contact Us</h1>
+                <p>Connect with us on social media for the latest updates and promotions:</p>
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com/profile.php?id=61554968320269&mibextid=LQQJ4d" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/yumplings.ph?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank">Instagram</a></li>
+                </ul>
+    
+            </section>
+
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>For inquiries, call us at: <span id="phoneNumber">09059694828</span></p>
+                <button onclick="copyPhoneNumber()">Copy Phone Number</button>
+            </section>
+            
+            <!-- Include this script in your HTML or link to an external JavaScript file -->
+            <script>
+                function copyPhoneNumber() {
+                    // Get the text content of the phone number span
+                    var phoneNumberText = document.getElementById("phoneNumber").innerText;
+            
+                    // Create a temporary input element
+                    var tempInput = document.createElement("input");
+                    
+                    // Set the value of the input to the phone number text
+                    tempInput.value = phoneNumberText;
+                    
+                    // Append the input element to the document
+                    document.body.appendChild(tempInput);
+                    
+                    // Select the text in the input element
+                    tempInput.select();
+                    
+                    // Execute the copy command
+                    document.execCommand("copy");
+                    
+                    // Remove the temporary input element
+                    document.body.removeChild(tempInput);
+                    
+                    // Provide some visual feedback (you can customize this part)
+                    alert("Phone number copied: " + phoneNumberText);
+                }
+            </script>
+        </main>
+
+
+        <script src="animations.js"></script>
+      
+        <script src="script.js"></script>
+</body>
+</html>

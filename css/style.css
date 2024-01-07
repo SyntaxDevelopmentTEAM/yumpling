@@ -1,0 +1,415 @@
+/* style.css */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ff9999;
+    color: #333;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    overflow-y: scroll;
+    scrollbar-color: #cc6666 #ff9999;
+}
+
+header {
+    background-color: #cc6666;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    border-bottom: 5px solid #990000;
+    transition: background-color 0.5s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    opacity: 0.3;
+    transition: opacity 0.5s ease;
+}
+
+header img:hover {
+    opacity: 1;
+}
+
+footer {
+    background-color: #cc6666;
+    color: white;
+    text-align: center;
+    padding: 0.1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 5px solid #990000;
+    transition: background-color 0.5s ease;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    background-color: #cc6666; /* Background color for the navigation bar */
+    padding: 10px 0; /* Add some padding for better visual appearance */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+
+
+
+
+
+section {
+    padding: 20px;
+    background-color: #ffcccc;
+    opacity: 0.9;
+    transition: background-color 0.8s ease, opacity 0.8s ease, box-shadow 0.8s ease;
+    border: 2px solid #cc6666;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section:hover {
+    background-color: #cc6666;
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+    font-size: 1.5em;
+    transition: font-size 0.8s ease;
+}
+
+section:hover h2 {
+    font-size: 2em;
+}
+
+section p {
+    font-size: 1em;
+    transition: font-size 0.8s ease;
+}
+
+section:hover p {
+    font-size: 1.2em;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+    background-color: #ff9999;
+    animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ff9999;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #cc6666;
+}
+
+/* Additional styles for menu */
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffcccc;
+    opacity: 0.9;
+    transition: background-color 0.8s ease, opacity 0.8s ease, box-shadow 0.8s ease;
+    border: 2px solid #cc6666;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-item:hover {
+    background-color: #cc6666;
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.menu-item img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.5s ease;
+}
+
+.menu-item:hover img {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+.item-details {
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.menu-item:hover .item-details {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+.price {
+    font-weight: bold;
+}
+
+.section-heading-rice,
+.section-heading-carte {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: font-size 0.8s ease, color 0.8s ease;
+}
+
+
+
+header img {
+    opacity: 0.3;
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Added transform transition */
+}
+
+header img:hover {
+    opacity: 1;
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+nav2 ul {
+    list-style: none; /* Remove the dots */
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    background-color: #cc6666; /* Background color for the navigation bar */
+    padding: 10px 0; /* Add some padding for better visual appearance */
+}
+
+nav2 a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+nav2 a:hover,
+nav2 a.active {
+    color: #ffd700;
+    background-color: #990000; /* Background color on hover or active */
+}
+
+#objectives {
+    padding: 20px;
+    background-color: #ffcccc;
+    opacity: 0.9;
+    transition: background-color 0.8s ease, opacity 0.8s ease, box-shadow 0.8s ease;
+    border: 2px solid #cc6666;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#objectives h2 {
+    font-size: 1.5em;
+    transition: font-size 0.8s ease;
+}
+
+#objectives p {
+    font-size: 1em;
+    transition: font-size 0.8s ease;
+}
+
+#objectives ul {
+    list-style-type: disc; /* Use disc for bullet points */
+    padding: 10px 0; /* Add space between the list items */
+}
+
+#objectives li {
+    font-size: 1em;
+    transition: font-size 0.8s ease;
+}
+
+#objectives:hover {
+    background-color: #cc6666;
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+#objectives:hover h2 {
+    font-size: 1.8em;
+}
+
+#objectives:hover p {
+    font-size: 1.2em;
+}
+
+#objectives:hover li {
+    font-size: 1.2em;
+}
+
+#contact {
+    padding: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#contact {
+    padding: 20px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.concerns {
+    margin-top: 30px;
+}
+
+.concerns h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.concerns p {
+    margin-bottom: 20px;
+}
+
+.concerns form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.concerns label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.concerns input,
+.concerns textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.concerns button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.image-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.image-item {
+    width: 45%; /* Adjust the width based on your design */
+    margin: 10px;
+    overflow: hidden;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.image-item:hover img {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+/* Add this to your existing CSS or create a new section for mobile styles */
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 0.5em;
+    }
+
+    nav a {
+        padding: 10px 15px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .menu-item {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .menu-item img {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        padding: 0.2em;
+    }
+
+    /* Add more styles as needed for better mobile usability */
+}
+
+#mainfrozen-image {
+    max-width: 20%; /* Adjust the percentage or use specific pixels */
+}
+
